@@ -1,0 +1,10 @@
+<div class="col-md-offset-1 col-md-10">
+  <div class="blog-article">
+    <h4 class="blog-article-title"><%= link_to blog.title, blog %></h4>
+    <div class="blog-article-content">
+      <p><%= truncate(blog.description, length: 130) %></p>
+      <!--<a href="blog-post-no-sidebar.html">Read more</a>-->
+      <%= link_to 'Read More', blog %>
+    </div><!-- blog-article-content -->
+  </div>
+</div>

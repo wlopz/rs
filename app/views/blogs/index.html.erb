@@ -1,33 +1,104 @@
-<p id="notice"><%= notice %></p>
+<div id="main-container">
+  <!-- PAGE CONTENT -->
+  <div id="page-content">
 
-<h1>Blogs</h1>
+    <div id="page-header">
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Body</th>
-      <th>Description</th>
-      <th>Slug</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+      <div class="ken-burn" style="background-image:url(<%= asset_path 'backgrounds/page-header-14.jpg' %>);"></div>
 
-  <tbody>
-    <% @blogs.each do |blog| %>
-      <tr>
-        <td><%= blog.title %></td>
-        <td><%= blog.body %></td>
-        <td><%= blog.description %></td>
-        <td><%= blog.slug %></td>
-        <td><%= link_to 'Show', blog %></td>
-        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
 
-<br>
+            <h1>Blog</h1>
 
-<%= link_to 'New Blog', new_blog_path %>
+            <!--<ol class="breadcrumb">-->
+              <!--<li><a href="#">Home</a></li>-->
+              <!--<li class="active">Blog no sidebar</li>-->
+            <!--</ol>-->
+
+          </div><!-- col -->
+        </div><!-- row -->
+      </div><!-- container -->
+
+    </div><!-- page-header -->
+
+    <div class="container">
+      <div class="row">
+        <%= render @blogs %>
+      </div><!-- row -->
+    </div><!-- container -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+
+          <ul class="pagination">
+            <li class="active"><a href="#">1.</a></li>
+            <li><a href="#">2.</a></li>
+            <li><a href="#">3.</a></li>
+          </ul>
+
+        </div><!-- col -->
+      </div><!-- row -->
+    </div><!-- container -->
+
+  </div><!-- PAGE CONTENT -->
+
+
+  <!-- FOOTER -->
+  <footer id="footer-container">
+
+    <div id="footer" class="default-color">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+
+            <div class="widget widget-social">
+
+              <div class="social-media text-center">
+
+                <a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a>
+                <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                <a class="instagram" href="#"><i class="fa fa-instagram"></i></a>
+                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+
+              </div><!-- social-media -->
+
+            </div><!-- widget-social -->
+
+          </div><!-- col -->
+        </div><!-- row -->
+      </div><!-- container -->
+
+    </div><!-- footer -->
+
+    <div id="footer-bottom">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+
+            <div class="widget widget-text">
+
+              <div class="text-center">
+
+                <!--<img src="assets/images/footer-logo.png" alt="">-->
+
+                <p><small>2017 &copy; All rights reserved</small></p>
+
+              </div>
+
+            </div><!-- widget-text -->
+
+          </div><!-- col -->
+        </div><!-- row -->
+      </div><!-- container -->
+
+    </div><!-- footer-bottom -->
+
+  </footer><!-- FOOTER CONTAINER -->
+
+</div><!-- MAIN CONTAINER -->
