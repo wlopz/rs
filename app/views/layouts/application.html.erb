@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	
+	<title>Revision Soul</title>
+	
+	<!-- FAVICON AND APPLE TOUCH -->    
+	<link rel="shortcut icon" href="favicon.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-180x180.png">
+	<meta name="msapplication-TileImage" content="mstile.png">
+	<meta name="msapplication-TileColor" content="#94ccdf">
+	<meta name="theme-color" content="#94ccdf">
+
+	<!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,300i,400,400i,700,700i|Playfair+Display:400,400i" rel="stylesheet">
+
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <div id="main container">
+
+      <!-- HEADER -->
+      <header id="header">
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-3">
+
+              <!-- LOGO -->
+              <div id="logo">
+                <a href="index.html">
+                  <%= link_to(image_tag("arrow-down.png", :alt => "arrow", :size => "150x150"), "/") %>
+                </a>
+              </div><!-- LOGO -->
+
+            </div><!-- col -->
+            <div class="col-sm-9">
+
+              <!-- MENU -->
+              <nav>
+
+                <a id="mobile-menu-button" class="waves" href="#"><i class="custom-icon-menu"></i></a>
+
+                  <ul class="menu clearfix" id="menu">
+                    <li class="megamenu <%= is_active?(root_path) %>">
+                      <%= link_to "Home", root_path, :"data-no-turbolink" => true, method: "get" %>
+                    </li>
+                    <li class="megamenu <%= is_active?(team_path) %>">
+                      <%= link_to "Meet Team Derrick", team_path, :"data-no-turbolink" => true, method: "get" %>
+                    </li>
+                    <li class="megamenu">
+                      <a href="#">New Patient Center</a>
+                    </li>
+                    <li class="megamenu">
+                      <a href="#">About Us</a>
+                    </li>
+                    <li class="megamenu <%= is_active?(blogs_path) %>">
+                      <%= link_to "Blog", blogs_path, :"data-no-turbolink" => true, method: "get" %>
+                    </li>
+                  </ul>
+
+              </nav>
+
+            </div><!-- col -->
+          </div><!-- row -->
+        </div><!-- container -->
+
+      </header><!-- HEADER -->
+
+      <%= yield %>
+
+    </div><!-- MAIN CONTAINER -->
+  </body>
+</html>
