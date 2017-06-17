@@ -16,6 +16,8 @@ gem 'wow-rails'
 gem 'bootstrap-sass', '~> 3.3.6'
 # Friendly_ID for Slugs
 gem 'friendly_id', '~> 5.1.0'
+# Paperclip
+gem 'paperclip'
 group :production do
   gem 'rails_12factor'
 end
