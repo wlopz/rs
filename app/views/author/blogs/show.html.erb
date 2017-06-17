@@ -1,0 +1,18 @@
+<div class="col-md-offset-1 col-md-10">
+  <div class="blog-article">
+    <div class="blog-article-thumbnail">
+      <!--<a href="blog-post-no-sidebar.html"><img src="images/blog/image-15.jpg" alt=""></a>-->
+      <%= link_to image_tag(@blog.image.url(:med)), @blog.image.url %>
+    </div><!-- blog-article-thumbnail -->
+    <a class="date" href="#"><%= @blog.display_day_published %></a>
+    <h4 class="blog-article-title"><%= @blog.title %></h4>
+    <div class="blog-article-content">
+      <%= @blog.body %>
+    </div><!-- blog-article-content -->
+    <div class="row">
+      <%= link_to 'Edit', edit_author_blog_path(@blog), class: 'btn btn-sm btn-warning' %>
+      <%= link_to 'Remove', author_blog_path(@blog), method: :delete, data: { confirm: 'Are you sure?'}, class: 'btn btn-sm btn-danger' %>
+      <%= link_to 'Back', author_blogs_path, class: 'btn btn-sm btn-info' %>
+    </div>
+  </div>
+</div>

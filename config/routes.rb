@@ -1,8 +1,13 @@
 Rails.application.routes.draw do
 
-  resources :blogs do
-    get 'blogs/index'
+  root to: "menu#home"
+
+  namespace :author do
+    resources :blogs do
+      get 'blogs/index'
+    end
   end
+
 
   get 'menu/home'
 
@@ -18,10 +23,11 @@ Rails.application.routes.draw do
 
   get 'menu/stories'
 
-  # get 'blog' => 'blogs#index', as: :blog
+  get 'blogs' => 'blogs#index', as: :blogs
+
+  get 'blogs/:id' => 'blogs#show', as: :blog
 
   get 'menu/contact'
 
-  root to: "menu#home"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

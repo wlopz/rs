@@ -1,0 +1,50 @@
+<!-- HEADER -->
+<header id="header">
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3">
+
+        <!-- LOGO -->
+        <div id="logo">
+          <a href="index.html">
+            <%= link_to(image_tag("arrow-down.png", :alt => "arrow", :size => "150x150"), "/") %>
+          </a>
+        </div><!-- LOGO -->
+
+      </div><!-- col -->
+      <div class="col-sm-9">
+
+        <!-- MENU -->
+        <nav>
+
+          <a id="mobile-menu-button" class="waves" href="#"><i class="custom-icon-menu"></i></a>
+
+          <ul class="menu clearfix" id="menu">
+            <li class="megamenu <%= is_active?(root_path) %>">
+              <%= link_to "Home", root_path, :"data-no-turbolink" => true, method: "get" %>
+            </li>
+            <li class="megamenu <%= is_active?(team_path) %>">
+              <%= link_to "Meet Team Derrick", team_path, :"data-no-turbolink" => true, method: "get" %>
+            </li>
+            <li class="megamenu">
+              <a href="#">New Patient Center</a>
+            </li>
+            <li class="megamenu">
+              <a href="#">About Us</a>
+            </li>
+            <li class="megamenu <%= is_active?(blogs_path) %>">
+              <%= link_to "Blog", blogs_path, :"data-no-turbolink" => true, method: "get" %>
+            </li>
+            <li class="megamenu <%= is_active?(author_blogs_path) %>">
+              <%= link_to "My Blogs", author_blogs_path, :"data-no-turbolink" => true, method: "get" %>
+            </li>
+          </ul>
+
+        </nav>
+
+      </div><!-- col -->
+    </div><!-- row -->
+  </div><!-- container -->
+
+</header><!-- HEADER -->

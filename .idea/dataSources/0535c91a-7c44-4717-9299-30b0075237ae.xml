@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="Wilo@localhost">
-  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.1">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.2">
     <root id="1"/>
     <database id="2" parent="1" name="Wilo">
       <ObjectId>16384</ObjectId>
@@ -9,7 +9,7 @@
     </database>
     <schema id="3" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2017-06-10.21:26:00.846</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2017-06-17.11:48:01.389</IntrospectionTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>

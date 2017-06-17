@@ -1,0 +1,113 @@
+<div id="main-container">
+  <!-- PAGE CONTENT -->
+  <div id="page-content">
+
+    <div id="page-header">
+
+      <div class="ken-burn" style="background-image:url(<%= asset_path 'backgrounds/page-header-14.jpg' %>);"></div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+
+            <h1>My Blogs</h1>
+
+            <!--<ol class="breadcrumb">-->
+              <!--<li><a href="#">Home</a></li>-->
+              <!--<li class="active">Blog no sidebar</li>-->
+            <!--</ol>-->
+
+          </div><!-- col -->
+        </div><!-- row -->
+      </div><!-- container -->
+
+    </div><!-- page-header -->
+
+    <div class="container">
+      <div class="row">
+        <div>
+          <%= link_to 'New Post', new_author_blog_path, class:'btn btn-lg btn-primary' %>
+        </div>
+        <br>
+        <table class="table table-striped">
+          <tr>
+            <th colspan="4">Title</th>
+          </tr>
+          <%= render @blogs %>
+        </table>
+      </div><!-- row -->
+    </div><!-- container -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+
+          <ul class="pagination">
+            <li class="active"><a href="#">1.</a></li>
+            <li><a href="#">2.</a></li>
+            <li><a href="#">3.</a></li>
+          </ul>
+
+        </div><!-- col -->
+      </div><!-- row -->
+    </div><!-- container -->
+
+  </div><!-- PAGE CONTENT -->
+
+
+  <!-- FOOTER -->
+  <footer id="footer-container">
+
+    <div id="footer" class="default-color">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+
+            <div class="widget widget-social">
+
+              <div class="social-media text-center">
+
+                <a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a>
+                <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                <a class="instagram" href="#"><i class="fa fa-instagram"></i></a>
+                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+
+              </div><!-- social-media -->
+
+            </div><!-- widget-social -->
+
+          </div><!-- col -->
+        </div><!-- row -->
+      </div><!-- container -->
+
+    </div><!-- footer -->
+
+    <div id="footer-bottom">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+
+            <div class="widget widget-text">
+
+              <div class="text-center">
+
+                <!--<img src="assets/images/footer-logo.png" alt="">-->
+
+                <p><small>2017 &copy; All rights reserved</small></p>
+
+              </div>
+
+            </div><!-- widget-text -->
+
+          </div><!-- col -->
+        </div><!-- row -->
+      </div><!-- container -->
+
+    </div><!-- footer-bottom -->
+
+  </footer><!-- FOOTER CONTAINER -->
+
+</div><!-- MAIN CONTAINER -->

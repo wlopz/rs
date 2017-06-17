@@ -20,8 +20,8 @@ class MenuController < ApplicationController
   def stories
   end
 
-  def blog
-  end
+  # def blog
+  # end
 
   def contact
   end
