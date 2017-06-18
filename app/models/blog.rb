@@ -2,6 +2,8 @@ class Blog < ApplicationRecord
   extend FriendlyId
   friendly_id :title, use: :slugged
 
+  belongs_to :author
+
   scope :most_recent, -> {order(id: :desc)}
 
   has_attached_file :image, styles: { med: "1920x800" }
