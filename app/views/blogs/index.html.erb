@@ -33,10 +33,11 @@
       <div class="row">
         <div class="col-sm-12">
 
-          <ul class="pagination">
-            <li class="active"><a href="#">1.</a></li>
-            <li><a href="#">2.</a></li>
-            <li><a href="#">3.</a></li>
+          <ul class="flickr_pagination">
+            <%= will_paginate @blogs, :params => { :controller => 'blogs', :action => 'index', _: nil, _method: nil, authenticity_token: nil, utf8: nil} %>
+            <!--<li class="active"><a href="#">1.</a></li>-->
+            <!--<li><a href="#">2.</a></li>-->
+            <!--<li><a href="#">3.</a></li>-->
           </ul>
 
         </div><!-- col -->

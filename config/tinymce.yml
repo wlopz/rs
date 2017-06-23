@@ -1,0 +1,36 @@
+#  toolbar:
+#    - styleselect | bold italic | undo redo
+#    - uploadimage | link
+#  plugins:
+#    - link
+#    - advlist
+#    - autolink
+#    - lists
+#    - link
+#    - image
+#    - uploadimage
+#    - charmap
+#    - print
+#    - preview
+#    - hr
+#    - anchor
+#    - pagebreak
+#    - searchreplace
+#    - wordcount
+#    - visualblocks
+#    - visualchars
+#    - code
+#    - fullscreen
+#    - insertdatetime
+#    - media
+#    - nonbreaking
+#    - save
+#    - table
+#    - contextmenu
+#    - directionality
+#    - emoticons
+#    - template
+#    - paste
+#    - textcolor
+#    - colorpicker
+#    - textpattern

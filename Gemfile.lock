@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/mbleigh/acts-as-taggable-on.git
+  revision: 4d9a10c25e106bd2467662baea58510a17809ca2
+  specs:
+    acts-as-taggable-on (5.0.0)
+      activerecord (>= 4.2.8)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -40,6 +47,9 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.1)
       public_suffix (~> 2.0, >= 2.0.2)
+    annotate (2.7.2)
+      activerecord (>= 3.2, < 6.0)
+      rake (>= 10.4, < 13.0)
     arel (8.0.0)
     autoprefixer-rails (7.1.1)
       execjs
@@ -150,6 +160,7 @@ GEM
     rb-fsevent (0.9.8)
     rb-inotify (0.9.8)
       ffi (>= 0.5.0)
+    rb-readline (0.5.4)
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
@@ -199,6 +210,7 @@ GEM
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
+    will_paginate (3.1.6)
     wow-rails (0.0.1)
     xpath (2.1.0)
       nokogiri (~> 1.3)
@@ -207,6 +219,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  acts-as-taggable-on!
+  annotate
   bootstrap-sass (~> 3.3.6)
   byebug
   capybara (~> 2.13)
@@ -219,6 +233,7 @@ DEPENDENCIES
   pg
   rails (~> 5.1.1)
   rails_12factor
+  rb-readline
   sass-rails (~> 5.0)
   selenium-webdriver
   spring
@@ -227,6 +242,7 @@ DEPENDENCIES
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
+  will_paginate (~> 3.1.0)
   wow-rails
 
 BUNDLED WITH

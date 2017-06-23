@@ -3,12 +3,15 @@ Rails.application.routes.draw do
   devise_for :authors
   root to: "menu#home"
 
-  namespace :author do
+  # post '/tinymce_assets' => 'tinymce_assets#create'
+
+  namespace :authors do
     resources :blogs do
       get 'blogs/index'
+      put 'publish' => 'blogs#publish', on: :member
+      put 'unpublish' => 'blogs#unpublish', on: :member
     end
   end
-
 
   get 'menu/home'
 

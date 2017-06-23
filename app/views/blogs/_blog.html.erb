@@ -6,6 +6,7 @@
     </div><!-- blog-article-thumbnail -->
     <a class="date" href="#"><%= blog.display_day_published %></a>
     <h4 class="blog-article-title"><%= link_to blog.title, blog %></h4>
+    <p><h6><%= raw blog.tags.map{ |t| link_to t.name, blogs_path(tag: t.name) }.join(', ') %></h6></p>
     <div class="blog-article-content">
       <p><%= truncate(blog.description, length: 130) %></p>
       <!--<a href="blog-post-no-sidebar.html">Read more</a>-->

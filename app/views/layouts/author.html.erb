@@ -23,6 +23,7 @@
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=r3v1eyh7uyhjuyz1jom935p3o7w65wcu23br248e7n58xups"></script>
 </head>
 
 <body>
@@ -30,9 +31,6 @@
 <div id="main container">
 
   <%= render 'layouts/navbar' %>
-
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
 
   <%= yield %>
 

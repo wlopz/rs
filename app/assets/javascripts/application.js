@@ -1949,3 +1949,48 @@
     };
 
 }(jQuery, jQuery.fancybox));
+
+document.addEventListener("turbolinks:load", function() {
+    tinymce.remove();
+    tinymce.init({
+        selector:'textarea#blog_body',
+        theme: "modern",
+        paste_data_images: true,
+        plugins: [
+            "advlist autolink lists link image charmap print preview hr anchor pagebreak",
+            "searchreplace wordcount visualblocks visualchars code fullscreen",
+            "insertdatetime media nonbreaking save table contextmenu directionality",
+            "emoticons template paste textcolor colorpicker textpattern"
+        ],
+        toolbar1: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
+        toolbar2: "print preview media | forecolor backcolor emoticons",
+        image_advtab: true,
+        file_picker_callback: function(callback, value, meta) {
+            if (meta.filetype == 'image') {
+                $('#upload').trigger('click');
+                $('#upload').on('change', function() {
+                    var file = this.files[0];
+                    var reader = new FileReader();
+                    reader.onload = function(e) {
+                        callback(e.target.result, {
+                            alt: ''
+                        });
+                    };
+                    reader.readAsDataURL(file);
+                });
+            }
+        }
+    });
+})
+
+// $("document:ready", function() {
+//     $("[rel=tinymce]").tinymce({
+//         theme: "modern",
+//         toolbar:    "bold,italic,underline,|,bullist,numlist,outdent,indent,|,undo,redo,|,pastetext,pasteword,selectall,|,uploadimage",
+//         pagebreak_separator: "<p class='page-separator'>&nbsp;</p>",
+//         plugins: ["uploadimage"],
+//         relative_urls: false,
+//         remove_script_host: false,
+//         document_base_url: (!window.location.origin ? window.location.protocol + "//" + window.location.host : window.location.origin) + "/",
+//     })
+// });

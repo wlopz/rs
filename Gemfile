@@ -18,8 +18,20 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'friendly_id', '~> 5.1.0'
 # Paperclip
 gem 'paperclip'
+# Readline
+gem 'rb-readline'
 # Devise
 gem 'devise'
+# Annotate
+gem 'annotate'
+# Paginate
+gem 'will_paginate', '~> 3.1.0'
+# Act as Taggable
+# gem 'acts-as-taggable-on', '~> 4.0'
+# TODO: remove once new stable version > 4.0 is released
+# https://rubygems.org/gems/acts-as-taggable-on
+gem 'acts-as-taggable-on', github: 'mbleigh/acts-as-taggable-on'
+
 group :production do
   gem 'rails_12factor'
 end

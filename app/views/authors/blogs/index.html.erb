@@ -24,14 +24,18 @@
     </div><!-- page-header -->
 
     <div class="container">
+      <% if notice || alert %>
+          <p class="notice"><%= notice %></p>
+          <p class="alert"><%= alert %></p>
+      <% end %>
       <div class="row">
         <div>
-          <%= link_to 'New Post', new_author_blog_path, class:'btn btn-lg btn-primary' %>
+          <%= link_to 'New Post', new_authors_blog_path, class:'btn btn-lg btn-primary' %>
         </div>
         <br>
         <table class="table table-striped">
           <tr>
-            <th colspan="4">Title</th>
+            <th colspan="5">Title</th>
           </tr>
           <%= render @blogs %>
         </table>

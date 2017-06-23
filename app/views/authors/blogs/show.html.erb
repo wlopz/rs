@@ -7,12 +7,12 @@
     <a class="date" href="#"><%= @blog.display_day_published %></a>
     <h4 class="blog-article-title"><%= @blog.title %></h4>
     <div class="blog-article-content">
-      <%= @blog.body %>
+      <%= @blog.body.html_safe %>
     </div><!-- blog-article-content -->
     <div class="row">
-      <%= link_to 'Edit', edit_author_blog_path(@blog), class: 'btn btn-sm btn-warning' %>
-      <%= link_to 'Remove', author_blog_path(@blog), method: :delete, data: { confirm: 'Are you sure?'}, class: 'btn btn-sm btn-danger' %>
-      <%= link_to 'Back', author_blogs_path, class: 'btn btn-sm btn-info' %>
+      <%= link_to 'Edit', edit_authors_blog_path(@blog), class: 'btn btn-sm btn-warning' %>
+      <%= link_to 'Remove', authors_blog_path(@blog), method: :delete, data: { confirm: 'Are you sure?'}, class: 'btn btn-sm btn-danger' %>
+      <%= link_to 'Back', authors_blogs_path, class: 'btn btn-sm btn-info' %>
     </div>
   </div>
 </div>

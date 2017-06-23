@@ -31,8 +31,11 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
-  #Devise
+  # Devise
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  # ImageMagick
+  Paperclip.options[:command_path] = "/usr/local/bin/"
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
