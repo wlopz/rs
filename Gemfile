@@ -31,6 +31,12 @@ gem 'will_paginate', '~> 3.1.0'
 # TODO: remove once new stable version > 4.0 is released
 # https://rubygems.org/gems/acts-as-taggable-on
 gem 'acts-as-taggable-on', github: 'mbleigh/acts-as-taggable-on'
+# Amazon SDK
+gem 'aws-sdk', '~> 2'
+# Envyable
+# gem 'envyable'
+# DOTENV
+gem 'dotenv-rails', groups: [:development, :test]
 
 group :production do
   gem 'rails_12factor'

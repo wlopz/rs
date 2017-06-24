@@ -137,6 +137,10 @@
     <orderEntry type="library" scope="PROVIDED" name="annotate (v2.7.2, RVM: ruby-2.3.1 [revisionSoulApp] (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v8.0.0, RVM: ruby-2.3.1 [revisionSoulApp] (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="autoprefixer-rails (v7.1.1, RVM: ruby-2.3.1 [revisionSoulApp] (1)) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="aws-sdk (v2.10.3, RVM: ruby-2.3.1 [revisionSoulApp] (1)) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="aws-sdk-core (v2.10.3, RVM: ruby-2.3.1 [revisionSoulApp] (1)) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="aws-sdk-resources (v2.10.3, RVM: ruby-2.3.1 [revisionSoulApp] (1)) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="aws-sigv4 (v1.0.0, RVM: ruby-2.3.1 [revisionSoulApp] (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.11, RVM: ruby-2.3.1 [revisionSoulApp] (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bindex (v0.5.0, RVM: ruby-2.3.1 [revisionSoulApp] (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bootstrap-sass (v3.3.7, RVM: ruby-2.3.1 [revisionSoulApp] (1)) [gem]" level="application" />
@@ -152,6 +156,8 @@
     <orderEntry type="library" scope="PROVIDED" name="coffee-script-source (v1.12.2, RVM: ruby-2.3.1 [revisionSoulApp] (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.0.5, RVM: ruby-2.3.1 [revisionSoulApp] (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="devise (v4.3.0, RVM: ruby-2.3.1 [revisionSoulApp] (1)) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="dotenv (v2.2.1, RVM: ruby-2.3.1 [revisionSoulApp] (1)) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="dotenv-rails (v2.2.1, RVM: ruby-2.3.1 [revisionSoulApp] (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.6.0, RVM: ruby-2.3.1 [revisionSoulApp] (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="execjs (v2.7.0, RVM: ruby-2.3.1 [revisionSoulApp] (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.9.18, RVM: ruby-2.3.1 [revisionSoulApp] (1)) [gem]" level="application" />
@@ -159,6 +165,7 @@
     <orderEntry type="library" scope="PROVIDED" name="globalid (v0.4.0, RVM: ruby-2.3.1 [revisionSoulApp] (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v0.8.4, RVM: ruby-2.3.1 [revisionSoulApp] (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.7.0, RVM: ruby-2.3.1 [revisionSoulApp] (1)) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jmespath (v1.3.1, RVM: ruby-2.3.1 [revisionSoulApp] (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="listen (v3.1.5, RVM: ruby-2.3.1 [revisionSoulApp] (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="loofah (v2.0.3, RVM: ruby-2.3.1 [revisionSoulApp] (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.6.6, RVM: ruby-2.3.1 [revisionSoulApp] (1)) [gem]" level="application" />
