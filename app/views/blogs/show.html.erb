@@ -7,7 +7,9 @@
     <a class="date" href="#"><%= @blog.display_day_published %></a>
     <h4 class="blog-article-title"><%= @blog.title %></h4>
     <div class="blog-article-content">
-      <%= @blog.body.html_safe %>
+      <article>
+        <%= @blog.body.html_safe %>
+      </article>
     </div><!-- blog-article-content -->
   </div>
 </div>
